@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket ball match</title>
+    <style>
+      
+        .body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>BAT BALL STRUMP GAME</h1>
+
+
+ <button onclick="console.log('you have chosen Bat');
+ let computer_chose= Math.random()*3
+let computer_random
+ if (computer_chose>=0 && computer_chose<=1)
+ {
+ //let computer_result='Bat';
+ //console.log('computer choice is Bat')
+ computer_random='Bat'
+ }
+ 
+ else if(computer_chose>=1 && computer_chose<=2)
+
+  {
+ //let computer_result='Ball';
+ // console.log('computer choice is Ball')
+  computer_random='Ball'
+ }
+ 
+ else{
+ //let computer_result='Stump';
+  //console.log('computer choice is Stump')
+   computer_random='Stump'
+ }
+
+ console.log(`comuter choice is ${computer_random}`)
+
+ let result
+ if (computer_chose=='Ball')
+{
+result='user won game' ;
+}
+
+ else if(computer_chose=='Bat')
+{
+result='its tie match'; 
+}
+
+ else (computer_chose=='Stump')
+{
+result='computer has won' ;
+}
+ 
+
+alert (`you have chosen Bat. computer choice is ${computer_random} and ${result}`);"
+ >BAT</button>
+
+
+<button onclick="
+console.log('You have chosen Ball');
+
+let computer = Math.random() * 3;
+let computerrandom;
+
+if (computer >= 0 && computer < 1) {
+  computerrandom = 'Bat';
+} else if (computer >= 1 && computer < 2) {
+  computerrandom = 'Ball';
+} else {
+  computerrandom = 'Stump';
+}
+
+console.log(`Computer choice is ${computerrandom}`);
+
+let r;
+if (computerrandom === 'Ball') {
+  r = 'It\'s a tie match';
+} else if (computerrandom === 'Bat') {
+  r = 'User won';
+} else {
+  r = 'Computer won';
+}
+
+alert(`You have chosen Ball. Computer choice is ${computerrandom}, and ${r}`);
+" >BALL</button>  
+
+
+ <button  onclick="
+  console.log('You have chosen stump');
+  
+  let stump = Math.random() * 3;
+  let stumprandom;
+
+  if (stump >= 0 && stump<=1) {
+    stumprandom = 'Bat';
+
+  } else if (stump >= 1 && stump <=2) {
+  stumprandom = 'Ball';
+  } else {
+    stumprandom = 'Stump';
+  }
+
+  console.log(`Computer choice is ${stumprandom}`);
+
+  let res;
+  if (stumprandom == 'Ball') {
+    res = 'Computer won';
+  } else if (stumprandom =='Bat') {
+    res = 'User won match';
+  } else {
+    res = 'It\'s a tie match';
+  }
+
+  alert(`You have chosen Ball. Computer choice is .${stumprandom} ${res}`);
+">STRUMP</button> 
+
+
+ <script>
+
+ </script>
+</body>
+</html>
